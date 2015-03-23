@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

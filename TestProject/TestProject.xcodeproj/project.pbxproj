@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C32583D1ABFEED500EAB178 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3258341ABFEEB000EAB178 /* CocoaLumberjack.framework */; };
 		0CCE74D01ABFE3810096961F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCE74CF1ABFE3810096961F /* AppDelegate.m */; };
 		0CCE74D21ABFE3810096961F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCE74D11ABFE3810096961F /* main.m */; };
 		0CCE74D51ABFE3810096961F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCE74D41ABFE3810096961F /* ViewController.m */; };
@@ -16,6 +17,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0C3258331ABFEEB000EAB178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCB3185114EB418E001CFBEE;
+			remoteInfo = CocoaLumberjack;
+		};
+		0C3258351ABFEEB000EAB178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E58078F81A01C92F008819CA;
+			remoteInfo = CocoaLumberjackSwift;
+		};
+		0C3258371ABFEEB000EAB178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCB318CA14ED6C3B001CFBEE;
+			remoteInfo = FmwkTest;
+		};
+		0C3258391ABFEEB000EAB178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55CCBEFF19BA679200957A39;
+			remoteInfo = SwiftTest;
+		};
+		0C32583B1ABFEEB000EAB178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55BE8BD119DF190200979D7F;
+			remoteInfo = iOSSwift;
+		};
 		0CCE74E01ABFE3810096961F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0CCE74C11ABFE3810096961F /* Project object */;
@@ -26,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = ../CocoaLumberjack/Framework/Desktop/Lumberjack.xcodeproj; sourceTree = "<group>"; };
 		0CCE74C91ABFE3810096961F /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCE74CD1ABFE3810096961F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CCE74CE1ABFE3810096961F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C32583D1ABFEED500EAB178 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +96,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C32582C1ABFEEAF00EAB178 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C3258341ABFEEB000EAB178 /* CocoaLumberjack.framework */,
+				0C3258361ABFEEB000EAB178 /* CocoaLumberjackSwift.framework */,
+				0C3258381ABFEEB000EAB178 /* FmwkTest.app */,
+				0C32583A1ABFEEB000EAB178 /* SwiftTest.app */,
+				0C32583C1ABFEEB000EAB178 /* iOSSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0CCE74C01ABFE3810096961F = {
 			isa = PBXGroup;
 			children = (
+				0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */,
 				0CCE74CB1ABFE3810096961F /* TestProject */,
 				0CCE74E21ABFE3810096961F /* TestProjectTests */,
 				0CCE74CA1ABFE3810096961F /* Products */,
@@ -183,6 +234,12 @@
 			mainGroup = 0CCE74C01ABFE3810096961F;
 			productRefGroup = 0CCE74CA1ABFE3810096961F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0C32582C1ABFEEAF00EAB178 /* Products */;
+					ProjectRef = 0C32582B1ABFEEAF00EAB178 /* Lumberjack.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0CCE74C81ABFE3810096961F /* TestProject */,
@@ -190,6 +247,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0C3258341ABFEEB000EAB178 /* CocoaLumberjack.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjack.framework;
+			remoteRef = 0C3258331ABFEEB000EAB178 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C3258361ABFEEB000EAB178 /* CocoaLumberjackSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjackSwift.framework;
+			remoteRef = 0C3258351ABFEEB000EAB178 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C3258381ABFEEB000EAB178 /* FmwkTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = FmwkTest.app;
+			remoteRef = 0C3258371ABFEEB000EAB178 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C32583A1ABFEEB000EAB178 /* SwiftTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftTest.app;
+			remoteRef = 0C3258391ABFEEB000EAB178 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C32583C1ABFEEB000EAB178 /* iOSSwift.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSSwift.app;
+			remoteRef = 0C32583B1ABFEEB000EAB178 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0CCE74C71ABFE3810096961F /* Resources */ = {
@@ -330,22 +425,26 @@
 		0CCE74EA1ABFE3810096961F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include";
 			};
 			name = Debug;
 		};
 		0CCE74EB1ABFE3810096961F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include";
 			};
 			name = Release;
 		};
@@ -404,6 +503,7 @@
 				0CCE74EB1ABFE3810096961F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CCE74EC1ABFE3810096961F /* Build configuration list for PBXNativeTarget "TestProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +512,7 @@
 				0CCE74EE1ABFE3810096961F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
